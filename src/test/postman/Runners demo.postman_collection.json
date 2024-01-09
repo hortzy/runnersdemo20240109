@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "3280806a-0a27-445f-b66a-efc67205ca2f",
+		"_postman_id": "cf43aef2-6a76-464b-8596-51cd761b6fe9",
 		"name": "Runners demo",
 		"description": "Runners Demo postman collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "9701363"
+		"_exporter_id": "32206263"
 	},
 	"item": [
 		{
@@ -132,6 +132,26 @@
 						"runner",
 						"1",
 						"addlaptime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getLargestShoeSizeRunnerName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/runners/largest-shoesize-runner-name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"runners",
+						"largest-shoesize-runner-name"
 					]
 				}
 			},
