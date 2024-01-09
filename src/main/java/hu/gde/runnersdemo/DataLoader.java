@@ -22,6 +22,7 @@ public class DataLoader implements CommandLineRunner {
         runnerEntity.setRunnerName("Tomi");
         runnerEntity.setPace(110);
         runnerEntity.setShoeSize(42);
+        runnerEntity.setShoeType(1);
         runnerRepository.save(runnerEntity);
 
 
@@ -44,6 +45,7 @@ public class DataLoader implements CommandLineRunner {
         runnerEntity2.setRunnerName("Zsuzsi");
         runnerEntity2.setPace(100);
         runnerEntity2.setShoeSize(39);
+        runnerEntity.setShoeType(2);
         runnerRepository.save(runnerEntity2);
 
         LapTimeEntity laptime3 = new LapTimeEntity();
@@ -65,6 +67,7 @@ public class DataLoader implements CommandLineRunner {
         runnerEntity3.setRunnerName("Eszti");
         runnerEntity3.setPace(90);
         runnerEntity3.setShoeSize(38);
+        runnerEntity.setShoeType(3);
         runnerRepository.save(runnerEntity3);
 
         LapTimeEntity laptime5 = new LapTimeEntity();
