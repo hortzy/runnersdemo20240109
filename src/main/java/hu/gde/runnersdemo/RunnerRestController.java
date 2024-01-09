@@ -47,6 +47,14 @@ public class RunnerRestController {
         return runnerRepository.findAll();
     }
 
+    @GetMapping("/largest-shoesize-runner-name")
+    public String getLargestShoeSizeRunnerName() {
+        return RunnerService.getLargestShoeSizeRunnerName();
+    }
+
+
+
+
     @PostMapping("/{id}/addlaptime")
     public ResponseEntity addLaptime(@PathVariable Long id, @RequestBody LapTimeRequest lapTimeRequest) {
         RunnerEntity runner = runnerRepository.findById(id).orElse(null);

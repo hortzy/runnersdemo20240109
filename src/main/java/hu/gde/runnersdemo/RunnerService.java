@@ -30,7 +30,7 @@ public class RunnerService {
             return -1.0;
         }
     }
-    public long getLargestFootRunnerName() {
+    public long getLargestShoeSizeRunnerName() {
         List<RunnerEntity> runners = runnerRepository.findAll();
 
         if (runners != null) {
