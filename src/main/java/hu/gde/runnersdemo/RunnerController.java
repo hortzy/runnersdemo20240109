@@ -51,6 +51,8 @@ public class RunnerController {
             return "error";
         }
     }
+
+
     @PostMapping("/runner/{id}/addlaptime")
     public String addLaptime(@PathVariable Long id, @ModelAttribute LapTimeEntity laptime) {
         RunnerEntity runner = runnerRepository.findById(id).orElse(null);
